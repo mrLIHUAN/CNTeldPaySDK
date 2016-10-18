@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   #s.source_files = 'TeldPaySDK/*.*', 'TeldPaySDK/**.*'
   s.default_subspec = 'AliPay15.1.6', 'SDK1.6.2', 'pic', 'Code'
   s.ios.deployment_target = '8.0'
-  s.frameworks = 'SystemConfiguration','CoreGraphics', 'UIKit', 'CoreTelephony','CoreText','CoreMotion','QuartzCore','CFNetwork','JavaScriptCore'
+  #s.frameworks = 'SystemConfiguration','CoreGraphics', 'UIKit', 'CoreTelephony','CoreText','CoreMotion','QuartzCore','CFNetwork','JavaScriptCore'
   s.libraries = 'z', 'c++'
 
 
@@ -18,7 +18,7 @@ s.subspec 'Code' do |code|
  code.source_files = 'CNTeldPaySDK/Code/*.h'
  code.public_header_files = 'CNTeldPaySDK/Code/*.h'
  code.vendored_libraries = 'CNTeldPaySDK/Code/*.a'
-
+ code.frameworks = 'SystemConfiguration','CoreGraphics', 'UIKit', 'CoreTelephony','CoreText','CoreMotion','QuartzCore','CFNetwork','JavaScriptCore'
 end
 
 s.subspec 'AliPay15.1.6' do |ss|
