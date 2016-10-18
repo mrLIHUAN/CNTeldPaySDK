@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
 s.subspec 'AliPay15.1.6' do |ss|
     ss.ios.vendored_frameworks = 'CNTeldPaySDK/AliPay15.1.6/AlipaySDK.framework'
     ss.resource = 'CNTeldPaySDK/AliPay15.1.6/AlipaySDK.bundle'
-  end
 end 
 
 s.subspec 'SDK1.6.2' do |ss|
