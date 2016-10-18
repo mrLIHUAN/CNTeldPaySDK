@@ -22,6 +22,6 @@ s.subspec 'AliPay15.1.6' do |ss|
 end 
 
 s.subspec 'SDK1.6.2' do |ss|
-    ss.resource = 'CNTeldPaySDK/SDK1.6.2/*.*’
+    ss.resource = 'CNTeldPaySDK/SDK1.6.2/*.*'
   end
 end 
