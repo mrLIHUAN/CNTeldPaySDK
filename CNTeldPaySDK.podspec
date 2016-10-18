@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
 
 
 s.subspec 'Code' do |code|
- code.source_files = 'CNTeldPaySDK/*.h'
-code.public_header_files = 'CNTeldPaySDK/*.h'
-code.vendored_libraries = 'CNTeldPaySDK/*.a'
+ code.source_files = 'CNTeldPaySDK/Code/*.h'
+ code.public_header_files = 'CNTeldPaySDK/Code/*.h'
+ code.vendored_libraries = 'CNTeldPaySDK/Code/*.a'
 
 end
 
