@@ -14,6 +14,12 @@ Pod::Spec.new do |s|
   s.libraries = 'z', 'c++'
 
 
+s.subspec 'Code' do |code|
+ code.source_files = 'CNTeldPaySDK/*.h'
+code.public_header_files = 'CNTeldPaySDK/*.h'
+code.vendored_libraries = 'CNTeldPaySDK/*.a'
+
+end
 
 s.subspec 'AliPay15.1.6' do |ss|
     ss.ios.vendored_frameworks = 'CNTeldPaySDK/AliPay15.1.6/AlipaySDK.framework'
@@ -30,8 +36,5 @@ s.subspec 'pic' do |ss|
 
 end 
 
-s.subspec 'Code' do |ss|
-    ss.resource = 'CNTeldPaySDK/Code/*.*'
-end
 
 end 
