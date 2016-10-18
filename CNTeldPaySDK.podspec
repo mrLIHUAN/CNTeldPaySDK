@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "CNTeldPaySDK" 
-  s.version          = "1.0.3" 
+  s.version          = "1.0.4" 
   s.summary          = "支付中心"  
   s.homepage         = "https://github.com/mrLIHUAN/CNTeldPaySDK"   
   s.license          = 'MIT'  
