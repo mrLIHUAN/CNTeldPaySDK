@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.author           = { "mrLIHUAN" => "1139116598@qq.com" }  
   s.source           = { :git => "https://github.com/mrLIHUAN/CNTeldPaySDK.git", :tag => s.version.to_s }   
   s.requires_arc = true
-  s.source_files = 'TeldPaySDK/*.*'
-  s.default_subspec = 'AliPay15.1.6', 'SDK1.6.2', 'pic'
+  #s.source_files = 'TeldPaySDK/*.*', 'TeldPaySDK/**.*'
+  s.default_subspec = 'AliPay15.1.6', 'SDK1.6.2', 'pic', 'Code'
   s.ios.deployment_target = '8.0'
   s.frameworks = 'SystemConfiguration','CoreGraphics', 'UIKit', 'CoreTelephony','CoreText','CoreMotion','QuartzCore','CFNetwork','JavaScriptCore'
   s.libraries = 'z', 'c++'
@@ -27,5 +27,11 @@ end
 
 s.subspec 'pic' do |ss|
     ss.resource = 'CNTeldPaySDK/pic/*.*'
-  end
+
+end 
+
+s.subspec 'Code' do |ss|
+    ss.resource = 'CNTeldPaySDK/Code/*.*'
+end
+
 end 
