@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = "支付中心"  
   s.homepage         = "https://github.com/mrLIHUAN/CNTeldPaySDK"   
   s.license          = 'MIT'  
-  s.author           = { "李欢" => "1139116598@qq.com" }  
+  s.author           = { "mrLIHUAN" => "1139116598@qq.com" }  
   s.source           = { :git => "https://github.com/mrLIHUAN/CNTeldPaySDK.git", :tag => s.version.to_s }   
   s.requires_arc = true
   s.default_subspec = 'AliPay15.1.6'
