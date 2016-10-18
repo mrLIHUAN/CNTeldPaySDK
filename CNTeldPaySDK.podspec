@@ -22,7 +22,7 @@ end
 
 s.subspec 'SDK1.6.2' do |ss|
     ss.resource = 'CNTeldPaySDK/SDK1.6.2/*.*'
-  end
+
 end 
 
 s.subspec 'pic' do |ss|
