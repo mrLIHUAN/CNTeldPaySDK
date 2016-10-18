@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.default_subspec = 'AliPay15.1.6'
   s.ios.deployment_target = '8.0'
-  s.source_files = 'TeldPaySDK/*.*','TeldPaySDK/**/*.*'
+  s.source_files = 'TeldPaySDK/*.*','TeldPaySDK/**/*'
   s.frameworks = 'SystemConfiguration','CoreGraphics', 'UIKit', 'CoreTelephony','CoreText','CoreMotion','QuartzCore','CFNetwork','JavaScriptCore'
   s.libraries = 'z', 'c++'
 
